@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login - Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-wrapper">
+        <a href="index.html" class="logo">M</a>
+        <h1 class="welcome-title">Welcome Back!</h1>
+        <p class="welcome-text">Sign in to continue to your account.</p>
+
+        <div class="login-card">
+            <h2 class="card-title">Login to your account</h2>
+            <p class="card-text">Enter your email and password to get started.</p>
+
+            <form id="loginForm" action="#" method="post" novalidate>
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                </div>
+
+                <div class="field">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="link-small">Forgot password?</a>
+                    </div>
+                    <div class="password-box">
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <button type="button" id="togglePassword" class="show-btn">Show</button>
+                    </div>
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn-signin">Sign In</button>
+            </form>
+
+            <p class="signup-text">Don't have an account? <a href="register.html" class="link-bold">Create an account</a></p>
+        </div>
+
+        <p class="copyright">&copy; 2026 My Website. All rights reserved.</p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
